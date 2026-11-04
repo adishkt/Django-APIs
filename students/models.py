@@ -8,3 +8,5 @@ class Student(models.Model):
     grade=models.CharField(max_length=20,blank=True)
     
     
+    def __str__(self):
+        return self.first_name
